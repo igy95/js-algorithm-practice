@@ -36,3 +36,15 @@ const max = Math.max(...arr);
 const 2dArray = new Array(5).fill().map(() => new Array(1).fill(0));
 // [[0], [0], [0], [0], [0]]
 ```
+
+### 회문(Palindrome) 판별
+
+```js
+function isPalindrome(str) {
+  for (let i = 0; i < str.length / 2; i++) {
+    if (str[i] !== str[str.length - i - 1]) return false;
+  }
+
+  return true;
+}
+```
